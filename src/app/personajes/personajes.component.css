@@ -1,0 +1,13 @@
+table {
+    width: 100%;
+  }
+  .example-button-row{
+    display: table-cell;
+    width: 490px;
+    border: 12px;
+    padding: 10px;
+  }
+.title{
+  margin: 30px;
+  text-align: center;
+}

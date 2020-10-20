@@ -1,0 +1,64 @@
+<mat-card class="example-card">
+    <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title> {{emiter.personaje.name}} </mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+        <div class="container">
+            <div class="field">
+                <label for="cumpleaños" class="primary"> Cumpleaños: </label>
+                <label for=""> {{emiter.personaje.birth_year}}</label>
+            </div>
+            <div class="field">
+                <label for="cumpleaños" class="primary" > creado:</label>
+                <label for=""> {{emiter.personaje.created}}</label>
+            </div>
+        </div>
+        <div class="container">
+            <div class="field">
+                <label for="cumpleaños" class="primary">Color de ojos:</label>
+                <label for=""> {{emiter.personaje.eye_color}}</label>
+            </div>
+            <div class="field">
+                <label for="cumpleaños" class="primary"> Genero:</label>
+                <label for=""> {{emiter.personaje.gender}}</label>
+            </div>
+        </div>
+        <div class="container">
+            <div class="field">
+                <label for="cumpleaños" class="primary">Color de pelo:</label>
+                <label for=""> {{emiter.personaje.hair_color}}</label>
+            </div>
+            <div class="field">
+                <label for="cumpleaños" class="primary" > Altura:</label>
+                <label for=""> {{emiter.personaje.height}}</label>
+            </div>
+        </div>
+        <div class="container">
+            <div class="field">
+                <label for="cumpleaños" class="primary"> Mundo natal:</label>
+                <label for=""> {{emiter.personaje.homeworld}}</label>
+            </div>
+            <div class="field">
+                <label for="cumpleaños" class="primary"> Altura:</label>
+                <label for=""> {{emiter.personaje.mass}}</label>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h3 class="primary">Lista de Peliculas</h3>
+            </div>
+            <div>
+                <ul>
+                    <li *ngFor = "let element of peliculas" >
+                      <span (click)="verDatos(element)"> {{element.title}} </span>
+                      </li>
+                </ul>
+            </div>
+        </div>
+    </mat-card-content>
+    <mat-card-actions>
+
+    </mat-card-actions>
+</mat-card>
